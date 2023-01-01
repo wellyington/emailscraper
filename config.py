@@ -3,8 +3,8 @@
 
 host = "localhost"
 database = "emailscraper"
-myuser = "username"
-mypass = "password"
+myuser = "root"
+mypass = "jut.2020.united.kingdom"
 
 # Badwords
 
