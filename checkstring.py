@@ -6,9 +6,7 @@ myconn = mysql.connector.connect(host=host, database=database, user=myuser, pass
 
 noDel = 0
 for badword in badwords:
-
     check = badword
-
     cursor = myconn.cursor(buffered=True)
     sqlAdd = "select id, email From emails where email like '%" + check + "%'"
     cursor.execute(sqlAdd)
@@ -19,7 +17,6 @@ for badword in badwords:
         cursor.execute(sqlDelete)
         myconn.commit()
         noDel += 1
-
 print('-' * 50)
 print(f'Deleted {noDel} Bad Emails!')
 print('-' * 50)
