@@ -1,14 +1,18 @@
 #!/bin/python3
 from hashlib import new
+# pip3 install bs4
 from bs4 import BeautifulSoup
 import requests
 import requests.exceptions
 import urllib.parse
 from collections import deque
 import re
+# pip3 install google
 from googlesearch import search
 import datetime
+#pip3 install mysql-connector
 import mysql.connector
+#pip3 install xlswriter
 import xlsxwriter
 import os
 from config import host, database, myuser, mypass, badwords

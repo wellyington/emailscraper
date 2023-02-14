@@ -94,6 +94,14 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.bin
+bin/
+lib/
+lib64/
+.lib
+.lib64
+xls/
+.xls
 
 # Spyder project settings
 .spyderproject
@@ -114,3 +122,4 @@ dmypy.json
 .pyre/
 
 config.py
+lib64
