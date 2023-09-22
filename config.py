@@ -4,7 +4,7 @@
 host = "localhost"
 database = "emailscraper"
 myuser = "root"
-mypass = "jut.2020.uk"
+mypass = "root"
 
 # Badwords
 
