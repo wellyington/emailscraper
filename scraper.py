@@ -33,6 +33,9 @@ uTotalScan = input('[+] Number Of Pages To Scan: ')
 gtotal = int(uTotalSearch)
 gurls = []
 
+if not os.path.exists("xls"):
+    os.makedirs("xls")
+
 # Create a workbook and add a worksheet
 workbook = xlsxwriter.Workbook(f'./xls/{gquery}.xlsx')
 worksheet = workbook.add_worksheet()
