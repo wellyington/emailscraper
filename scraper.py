@@ -10,7 +10,7 @@ import datetime
 import sqlite3
 import xlsxwriter
 import os
-from config import badwords
+from config import badwords, blocked_domains
 
 # Create a SQLite database connection
 conn = sqlite3.connect('emails.db')
@@ -41,7 +41,8 @@ workbook = xlsxwriter.Workbook(f'./xls/{gquery}.xlsx')
 worksheet = workbook.add_worksheet()
 
 for j in search(gquery, tld="com", num=int(gtotal), stop=int(gtotal), pause=2):
-    gurls.append(j)
+    if not any(domain in j for domain in blocked_domains):
+        gurls.append(j)
 
 print('Collecting URLs')
 print('-' * 80)
