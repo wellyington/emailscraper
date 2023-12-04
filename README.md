@@ -18,12 +18,12 @@ Before running the script, make sure you have the following dependencies install
 
 * `BeautifulSoup`: HTML parsing library
 * `requests`: HTTP library for making requests to websites
-* `googlesearch-python`: Google Search API
+* `google`: Google Search API
 * `xlsxwriter`: Library for creating Excel files
 
 Install these dependencies using the following:
 
-`pip install beautifulsoup4 requests googlesearch-python xlsxwriter`
+`pip install beautifulsoup4 requests google xlsxwriter`
 
 ## Usage
 
